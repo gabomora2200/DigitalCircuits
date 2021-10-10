@@ -1,0 +1,197 @@
+$date
+	Sun Aug 29 16:34:07 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPrueba $end
+$var wire 1 ! selector $end
+$var wire 1 " out_flop $end
+$var wire 1 # outOr $end
+$var wire 1 $ outNot $end
+$var wire 1 % outAnd $end
+$var wire 1 & dataOut $end
+$var wire 1 ' dataInB $end
+$var wire 1 ( dataInA $end
+$var wire 1 ) dataIn1 $end
+$var wire 1 * dataIn0 $end
+$var wire 1 + clk $end
+$scope module and_prueba $end
+$var wire 1 % out $end
+$var wire 1 ' B $end
+$var wire 1 ( A $end
+$upscope $end
+$scope module flip_1 $end
+$var wire 1 + clk $end
+$var wire 1 ) D $end
+$var reg 1 " out_flop $end
+$upscope $end
+$scope module mux_1 $end
+$var wire 1 ! selector $end
+$var wire 1 , outNot $end
+$var wire 1 - outAnd2 $end
+$var wire 1 . outAnd1 $end
+$var wire 1 & dataOut $end
+$var wire 1 ) dataIn1 $end
+$var wire 1 * dataIn0 $end
+$scope module and_1 $end
+$var wire 1 . out $end
+$var wire 1 , B $end
+$var wire 1 * A $end
+$upscope $end
+$scope module and_2 $end
+$var wire 1 - out $end
+$var wire 1 ! B $end
+$var wire 1 ) A $end
+$upscope $end
+$scope module not_1 $end
+$var wire 1 , out $end
+$var wire 1 ! in $end
+$upscope $end
+$scope module or_1 $end
+$var wire 1 . A $end
+$var wire 1 - B $end
+$var wire 1 & out $end
+$upscope $end
+$upscope $end
+$scope module not_prueba $end
+$var wire 1 $ out $end
+$var wire 1 ( in $end
+$upscope $end
+$scope module or_prueba $end
+$var wire 1 # out $end
+$var wire 1 ' B $end
+$var wire 1 ( A $end
+$upscope $end
+$scope module prob $end
+$var wire 1 & dataOut $end
+$var wire 1 % outAnd $end
+$var wire 1 $ outNot $end
+$var wire 1 # outOr $end
+$var wire 1 " out_flop $end
+$var reg 1 + clk $end
+$var reg 1 * dataIn0 $end
+$var reg 1 ) dataIn1 $end
+$var reg 1 ( dataInA $end
+$var reg 1 ' dataInB $end
+$var reg 1 ! selector $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x.
+x-
+x,
+0+
+0*
+0)
+0(
+0'
+x&
+x%
+x$
+x#
+x"
+0!
+$end
+#31
+1$
+1,
+#45
+0.
+0%
+0-
+#70
+0#
+#100
+0"
+1)
+1'
+1+
+#115
+0&
+#170
+1#
+#200
+0+
+#300
+0)
+1*
+0'
+1(
+1"
+1+
+#331
+0$
+#345
+1.
+#400
+0+
+#415
+1&
+#500
+0"
+1)
+1'
+1+
+#545
+1%
+#600
+0+
+#700
+0)
+0*
+0'
+0(
+1!
+1"
+1+
+#731
+1$
+0,
+#745
+0.
+0%
+#770
+0#
+#800
+0+
+#815
+0&
+#900
+0"
+1)
+1'
+1+
+#945
+1-
+#970
+1#
+#1000
+0+
+#1015
+1&
+#1100
+0)
+1*
+0'
+1(
+1"
+1+
+#1131
+0$
+#1145
+0-
+#1200
+0+
+#1215
+0&
+#1300
+0"
+1)
+1'
+1+

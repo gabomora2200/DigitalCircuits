@@ -1,0 +1,328 @@
+$date
+	Mon Aug 30 08:03:37 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPrueba $end
+$var wire 1 ! selector $end
+$var wire 2 " outMux [1:0] $end
+$var wire 2 # outFlop [1:0] $end
+$var wire 2 $ dataIn1 [1:0] $end
+$var wire 2 % dataIn0 [1:0] $end
+$var wire 1 & clk $end
+$scope module flop_2b $end
+$var wire 2 ' out_flop [1:0] $end
+$var wire 2 ( dataInD [1:0] $end
+$var wire 1 & clk $end
+$scope module flop_1 $end
+$var wire 1 ) D $end
+$var wire 1 & clk $end
+$var reg 1 * out_flop $end
+$upscope $end
+$scope module flop_2 $end
+$var wire 1 + D $end
+$var wire 1 & clk $end
+$var reg 1 , out_flop $end
+$upscope $end
+$upscope $end
+$scope module mux_2b $end
+$var wire 1 ! selector $end
+$var wire 2 - dataOut [1:0] $end
+$var wire 2 . dataIn1 [1:0] $end
+$var wire 2 / dataIn0 [1:0] $end
+$scope module mux_2b_1 $end
+$var wire 1 0 dataIn0 $end
+$var wire 1 1 dataIn1 $end
+$var wire 1 ! selector $end
+$var wire 1 2 outNot $end
+$var wire 1 3 outAnd2 $end
+$var wire 1 4 outAnd1 $end
+$var wire 1 5 dataOut $end
+$scope module and_1 $end
+$var wire 1 0 A $end
+$var wire 1 4 out $end
+$var wire 1 2 B $end
+$upscope $end
+$scope module and_2 $end
+$var wire 1 1 A $end
+$var wire 1 3 out $end
+$var wire 1 ! B $end
+$upscope $end
+$scope module not_1 $end
+$var wire 1 2 out $end
+$var wire 1 ! in $end
+$upscope $end
+$scope module or_1 $end
+$var wire 1 4 A $end
+$var wire 1 3 B $end
+$var wire 1 5 out $end
+$upscope $end
+$upscope $end
+$scope module mux_2b_2 $end
+$var wire 1 6 dataIn0 $end
+$var wire 1 7 dataIn1 $end
+$var wire 1 ! selector $end
+$var wire 1 8 outNot $end
+$var wire 1 9 outAnd2 $end
+$var wire 1 : outAnd1 $end
+$var wire 1 ; dataOut $end
+$scope module and_1 $end
+$var wire 1 6 A $end
+$var wire 1 : out $end
+$var wire 1 8 B $end
+$upscope $end
+$scope module and_2 $end
+$var wire 1 7 A $end
+$var wire 1 9 out $end
+$var wire 1 ! B $end
+$upscope $end
+$scope module not_1 $end
+$var wire 1 8 out $end
+$var wire 1 ! in $end
+$upscope $end
+$scope module or_1 $end
+$var wire 1 : A $end
+$var wire 1 9 B $end
+$var wire 1 ; out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module prob $end
+$var wire 2 < outFlop [1:0] $end
+$var wire 2 = outMux [1:0] $end
+$var reg 1 & clk $end
+$var reg 2 > dataIn0 [1:0] $end
+$var reg 2 ? dataIn1 [1:0] $end
+$var reg 1 ! selector $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 ?
+b11 >
+bx =
+bx <
+x;
+x:
+x9
+x8
+07
+16
+x5
+x4
+x3
+x2
+11
+10
+b11 /
+b1 .
+bx -
+x,
+0+
+x*
+1)
+b1 (
+bx '
+0&
+b11 %
+b1 $
+bx #
+bx "
+0!
+$end
+#31
+18
+12
+#45
+09
+03
+#76
+1:
+14
+#120
+17
+1+
+06
+00
+1*
+b1 #
+b1 '
+b1 <
+0,
+b11 $
+b11 (
+b11 .
+b11 ?
+b0 %
+b0 /
+b0 >
+1&
+#146
+1;
+b11 "
+b11 -
+b11 =
+15
+#165
+0:
+04
+#235
+0;
+b0 "
+b0 -
+b0 =
+05
+#240
+0&
+#360
+07
+0+
+16
+b1 $
+b1 (
+b1 .
+b1 ?
+b10 %
+b10 /
+b10 >
+b11 #
+b11 '
+b11 <
+1,
+1&
+#405
+1:
+#475
+b10 "
+b10 -
+b10 =
+1;
+#480
+0&
+#600
+17
+01
+1+
+0)
+06
+b1 #
+b1 '
+b1 <
+0,
+b10 $
+b10 (
+b10 .
+b10 ?
+b0 %
+b0 /
+b0 >
+1&
+#645
+0:
+#715
+b0 "
+b0 -
+b0 =
+0;
+#720
+0&
+#840
+07
+0+
+16
+10
+b0 $
+b0 (
+b0 .
+b0 ?
+b11 %
+b11 /
+b11 >
+1!
+1,
+b10 #
+b10 '
+b10 <
+0*
+1&
+#871
+08
+02
+#960
+0&
+#1080
+17
+1+
+06
+b0 #
+b0 '
+b0 <
+0,
+b10 $
+b10 (
+b10 .
+b10 ?
+b1 %
+b1 /
+b1 >
+1&
+#1125
+19
+#1195
+b10 "
+b10 -
+b10 =
+1;
+#1200
+0&
+#1320
+07
+11
+0+
+1)
+16
+b1 $
+b1 (
+b1 .
+b1 ?
+b11 %
+b11 /
+b11 >
+b10 #
+b10 '
+b10 <
+1,
+1&
+#1365
+09
+13
+#1435
+0;
+b1 "
+b1 -
+b1 =
+15
+#1440
+0&
+#1560
+17
+1+
+00
+1*
+b1 #
+b1 '
+b1 <
+0,
+b11 $
+b11 (
+b11 .
+b11 ?
+b10 %
+b10 /
+b10 >
+1&
