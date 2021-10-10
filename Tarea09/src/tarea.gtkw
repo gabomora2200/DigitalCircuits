@@ -1,0 +1,53 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Jul  1 03:58:28 2021
+[*]
+[dumpfile] "/home/gabriel/Documents/Digitales2/apoyodigitales/Tareas/Tarea9JP/Tarea_9_B71463/tarea9.vcd"
+[dumpfile_mtime] "Thu Jul  1 00:43:56 2021"
+[dumpfile_size] 33725
+[savefile] "/home/gabriel/Documents/Digitales2/apoyodigitales/Tareas/Tarea9JP/Tarea_9_B71463/tarea.gtkw"
+[timestart] 0
+[size] 1444 600
+[pos] 350 173
+*-3.184425 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] bancosumador.
+[treeopen] bancosumador.sumadorcond.
+[treeopen] bancosumador.sumadorsynth.
+[sst_width] 233
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+bancosumador.clk
+bancosumador.reset_L
+bancosumador.sumadorcond.data_A[3:0]
+bancosumador.sumadorcond.data_B[3:0]
+bancosumador.sumadorcond.sum_pipe1.sum_10[2:0]
+@200
+-
+@28
+bancosumador.sumadorcond.sum_pipe1.data_A_d[1:0]
+bancosumador.sumadorcond.sum_pipe1.data_B_d[1:0]
+bancosumador.sumadorcond.sum_pipe1.acarreo_d
+bancosumador.sumadorcond.sum_pipe1.sum_10_d[1:0]
+@200
+-
+@28
+bancosumador.sumadorcond.sum_pipe1.sum_30_dd[3:0]
+bancosumador.sumadorsynth.sum_pipe_synth1.sum_30_dd_synth[3:0]
+@200
+-
+@28
+bancosumador.sumadorcond.id1.idx[3:0]
+@200
+-
+@28
+bancosumador.sumadorcond.id1.idx_etapa_1[3:0]
+bancosumador.sumadorcond.id1.idx_etapa_2[3:0]
+@200
+-
+@28
+bancosumador.sumadorcond.id1.idx_dd[3:0]
+bancosumador.sumadorsynth.id1.idx_dd_synth[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
