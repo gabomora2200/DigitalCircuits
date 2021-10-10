@@ -1,0 +1,6 @@
+read_verilog ../Mux2x1.v 
+hierarchy -check -top Mux2x1 
+proc; opt; fsm; opt; memory; opt;
+techmap; opt
+show
+write_verilog ../sintetizado.v

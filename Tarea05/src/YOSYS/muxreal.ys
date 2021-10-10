@@ -1,0 +1,8 @@
+read_verilog ../Mux2x1.v 
+hierarchy -check -top Mux2x1 
+proc; opt; fsm; opt; memory; opt;
+techmap; opt
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+show
+write_verilog ../sintetizadoReal.v
