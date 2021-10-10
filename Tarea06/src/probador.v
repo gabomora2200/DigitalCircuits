@@ -1,0 +1,94 @@
+
+module probador(
+    output reg clk, 
+    output reg reset, 
+    output reg selector, 
+    output reg [1:0] dataIn0, 
+    output reg [1:0] dataIn1, 
+    output reg validIN0,
+    output reg validIN1,
+    input [1:0] dataOutCond,
+	input [1:0] dataOutSynth,
+    input validOUT);
+
+	initial begin
+		
+		$dumpfile("mux2_2bit.vcd");
+		$dumpvars;
+		$display ("\t\t\tclk,\tout,\treset,\tselector,\tin0,\tin1");
+		$monitor($time,"\t%b\t%b\t\t%b\t%b\t%b\t%b", clk, dataOutCond,validOUT,validIN0,validIN1, selector, reset, dataIn0, dataIn1);
+		{selector, reset} = 2'b0;
+		{dataIn0,dataIn1} = 2'b00;
+		{validIN0,validIN1}=2'b1;
+
+		repeat (1) begin		
+            @(posedge clk);	
+            reset <= 1; 
+            selector <= 1; 
+		end
+
+		
+
+        @(posedge clk)
+        dataIn0 <= 2'b11;
+		dataIn1 <= 2'b10;
+        selector <= 1;
+		validIN0=1;
+		validIN1=1;
+		
+        @(posedge clk)
+        dataIn0 <= 2'b01;
+		dataIn1 <= 2'b00;
+        selector <= 0;
+		validIN0=1;
+		validIN1=1;		
+        
+        @(posedge clk)
+        dataIn0 <= 2'b00;
+		dataIn1 <= 2'b10;
+		selector <= 0;
+		validIN0=1;
+		validIN1=1;
+
+        @(posedge clk)
+        dataIn0 <= 2'b01;
+		dataIn1 <= 2'b11;
+        selector <= 0;
+		validIN0=1;
+		validIN1=1;        
+
+        @(posedge clk)
+        dataIn0 <= 2'b00;
+		dataIn1 <= 2'b10;
+        selector <= 1;
+		validIN0=0;
+		validIN1=0;
+
+        @(posedge clk)
+        dataIn0 <= 2'b10;
+		dataIn1 <= 2'b00;
+        selector <= 0;
+		validIN0=0;
+		validIN1=0;
+
+		@(posedge clk)
+        selector <= 1;
+		validIN0=0;
+		validIN1=0;
+
+		@(posedge clk)
+        dataIn0 <= 2'b10;
+		dataIn1 <= 2'b00;
+        selector <= 1;
+		validIN0=1;
+		validIN1=1;
+
+        
+		$finish;
+	end
+	//CHECKER		
+	// Reloj
+	initial	clk 	<= 0;			// Valor inicial al reloj, sino siempre ser� indeterminado
+	always	#5 clk 	<= ~clk;
+endmodule
+ 
